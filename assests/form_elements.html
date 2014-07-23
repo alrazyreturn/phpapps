@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Form Elements - Ace Admin</title>
+
+		<meta name="description" content="Common form elements and layouts">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--basic styles-->
+
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+		<link rel="stylesheet" href="bootstrap/css/font-awesome.css">
+
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+
+		<!--page specific plugin styles-->
+
+		<link rel="stylesheet" href="Form%20Elements%20-%20Ace%20Admin_files/jquery-ui-1.css">
+		<link rel="stylesheet" href="Form%20Elements%20-%20Ace%20Admin_files/chosen.css">
+		<link rel="stylesheet" href="Form%20Elements%20-%20Ace%20Admin_files/datepicker.css">
+		<link rel="stylesheet" href="Form%20Elements%20-%20Ace%20Admin_files/bootstrap-timepicker.css">
+		<link rel="stylesheet" href="Form%20Elements%20-%20Ace%20Admin_files/daterangepicker.css">
+		<link rel="stylesheet" href="Form%20Elements%20-%20Ace%20Admin_files/colorpicker.css">
+
+		<!--fonts-->
+
+		<link rel="stylesheet" href="Form%20Elements%20-%20Ace%20Admin_files/css.css">
+
+		<!--ace styles-->
+
+		<link rel="stylesheet" href="Form%20Elements%20-%20Ace%20Admin_files/ace.css">
+		<link rel="stylesheet" href="Form%20Elements%20-%20Ace%20Admin_files/ace-responsive.css">
+		<link rel="stylesheet" href="Form%20Elements%20-%20Ace%20Admin_files/ace-skins.css">
+
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!--inline styles related to this page-->
+	</head>
+
+	<body>
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<a href="#" class="brand">
+						<small>
+							<i class="icon-leaf"></i>
+							Ace Admin
+						</small>
+					</a><!--/.brand-->
+
+					<ul class="nav ace-nav pull-right">
+						<li class="grey">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="icon-tasks"></i>
+								<span class="badge badge-grey">4</span>
+							</a>
+
+							<ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-closer">
+								<li class="nav-header">
+									<i class="icon-ok"></i>
+									4 Tasks to complete
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">Software Update</span>
+											<span class="pull-right">65%</span>
+										</div>
+
+										<div class="progress progress-mini ">
+											<div style="width:65%" class="bar"></div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">Hardware Upgrade</span>
+											<span class="pull-right">35%</span>
+										</div>
+
+										<div class="progress progress-mini progress-danger">
+											<div style="width:35%" class="bar"></div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">Unit Testing</span>
+											<span class="pull-right">15%</span>
+										</div>
+
+										<div class="progress progress-mini progress-warning">
+											<div style="width:15%" class="bar"></div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">Bug Fixes</span>
+											<span class="pull-right">90%</span>
+										</div>
+
+										<div class="progress progress-mini progress-success progress-striped active">
+											<div style="width:90%" class="bar"></div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										See tasks with details
+										<i class="icon-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="purple">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="icon-bell-alt icon-animated-bell"></i>
+								<span class="badge badge-important">8</span>
+							</a>
+
+							<ul class="pull-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-closer">
+								<li class="nav-header">
+									<i class="icon-warning-sign"></i>
+									8 Notifications
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">
+												<i class="btn btn-mini no-hover btn-pink icon-comment"></i>
+												New Comments
+											</span>
+											<span class="pull-right badge badge-info">+12</span>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="btn btn-mini btn-primary icon-user"></i>
+										Bob just signed up as an editor ...
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">
+												<i class="btn btn-mini no-hover btn-success icon-shopping-cart"></i>
+												New Orders
+											</span>
+											<span class="pull-right badge badge-success">+8</span>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">
+												<i class="btn btn-mini no-hover btn-info icon-twitter"></i>
+												Followers
+											</span>
+											<span class="pull-right badge badge-info">+11</span>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										See all notifications
+										<i class="icon-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="green">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="icon-envelope icon-animated-vertical"></i>
+								<span class="badge badge-success">5</span>
+							</a>
+
+							<ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-closer">
+								<li class="nav-header">
+									<i class="icon-envelope-alt"></i>
+									5 Messages
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="Form%20Elements%20-%20Ace%20Admin_files/avatar.png" class="msg-photo" alt="Alex's Avatar">
+										<span class="msg-body">
+											<span class="msg-title">
+												<span class="blue">Alex:</span>
+												Ciao sociis natoque penatibus et auctor ...
+											</span>
+
+											<span class="msg-time">
+												<i class="icon-time"></i>
+												<span>a moment ago</span>
+											</span>
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="Form%20Elements%20-%20Ace%20Admin_files/avatar3.png" class="msg-photo" alt="Susan's Avatar">
+										<span class="msg-body">
+											<span class="msg-title">
+												<span class="blue">Susan:</span>
+												Vestibulum id ligula porta felis euismod ...
+											</span>
+
+											<span class="msg-time">
+												<i class="icon-time"></i>
+												<span>20 minutes ago</span>
+											</span>
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="Form%20Elements%20-%20Ace%20Admin_files/avatar4.png" class="msg-photo" alt="Bob's Avatar">
+										<span class="msg-body">
+											<span class="msg-title">
+												<span class="blue">Bob:</span>
+												Nullam quis risus eget urna mollis ornare ...
+											</span>
+
+											<span class="msg-time">
+												<i class="icon-time"></i>
+												<span>3:15 pm</span>
+											</span>
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										See all messages
+										<i class="icon-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="light-blue">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<img class="nav-user-photo" src="Form%20Elements%20-%20Ace%20Admin_files/user.jpg" alt="Jason's Photo">
+								<span class="user-info">
+									<small>Welcome,</small>
+									Jason
+								</span>
+
+								<i class="icon-caret-down"></i>
+							</a>
+
+							<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-closer">
+								<li>
+									<a href="#">
+										<i class="icon-cog"></i>
+										Settings
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="icon-user"></i>
+										Profile
+									</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="#">
+										<i class="icon-off"></i>
+										Logout
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul><!--/.ace-nav-->
+				</div><!--/.container-fluid-->
+			</div><!--/.navbar-inner-->
+		</div>
+
+		<div class="main-container container-fluid">
+			<a class="menu-toggler" id="menu-toggler" href="#">
+				<span class="menu-text"></span>
+			</a>
+
+			<div class="sidebar" id="sidebar">
+				<div class="sidebar-shortcuts" id="sidebar-shortcuts">
+					<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+						<button class="btn btn-small btn-success">
+							<i class="icon-signal"></i>
+						</button>
+
+						<button class="btn btn-small btn-info">
+							<i class="icon-pencil"></i>
+						</button>
+
+						<button class="btn btn-small btn-warning">
+							<i class="icon-group"></i>
+						</button>
+
+						<button class="btn btn-small btn-danger">
+							<i class="icon-cogs"></i>
+						</button>
+					</div>
+
+					<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+						<span class="btn btn-success"></span>
+
+						<span class="btn btn-info"></span>
+
+						<span class="btn btn-warning"></span>
+
+						<span class="btn btn-danger"></span>
+					</div>
+				</div><!--#sidebar-shortcuts-->
+
+				<ul class="nav nav-list">
+					<li>
+						<a href="http://easy-themes.tk/themes/preview/ace/index.html">
+							<i class="icon-dashboard"></i>
+							<span class="menu-text"> Dashboard </span>
+						</a>
+					</li>
+
+					<li>
+						<a href="http://easy-themes.tk/themes/preview/ace/typography.html">
+							<i class="icon-text-width"></i>
+							<span class="menu-text"> Typography </span>
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="dropdown-toggle">
+							<i class="icon-desktop"></i>
+							<span class="menu-text"> UI Elements </span>
+
+							<b class="arrow icon-angle-down"></b>
+						</a>
+
+						<ul class="submenu">
+							<li>
+								<a href="http://easy-themes.tk/themes/preview/ace/elements.html">
+									<i class="icon-double-angle-right"></i>
+									Elements
+								</a>
+							</li>
+
+							<li>
+								<a href="http://easy-themes.tk/themes/preview/ace/buttons.html">
+									<i class="icon-double-angle-right"></i>
+									Buttons &amp; Icons
+								</a>
+							</li>
+
+							<li>
+								<a href="http://easy-themes.tk/themes/preview/ace/treeview.html">
+									<i class="icon-double-angle-right"></i>
+									Treeview
+								</a>
+							</li>
+
+							<li>
+								<a href="#" class="dropdown-toggle">
+									<i class="icon-double-angle-right"></i>
+
+									Three Level Menu
+									<b class="arrow icon-angle-down"></b>
+								</a>
+
+								<ul class="submenu">
+									<li>
+										<a href="#">
+											<i class="icon-leaf"></i>
+											Item #1
+										</a>
+									</li>
+
+									<li>
+										<a href="#" class="dropdown-toggle">
+											<i class="icon-pencil"></i>
+
+											4th level
+											<b class="arrow icon-angle-down"></b>
+										</a>
+
+										<ul class="submenu">
+											<li>
+												<a href="#">
+													<i class="icon-plus"></i>
+													Add Product
+												</a>
+											</li>
+
+											<li>
+												<a href="#">
+													<i class="icon-eye-open"></i>
+													View Products
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="http://easy-themes.tk/themes/preview/ace/tables.html">
+							<i class="icon-list"></i>
+							<span class="menu-text"> Tables </span>
+						</a>
+					</li>
+
+					<li class="active open">
+						<a href="#" class="dropdown-toggle">
+							<i class="icon-edit"></i>
+							<span class="menu-text"> Forms </span>
+
+							<b class="arrow icon-angle-down"></b>
+						</a>
+
+						<ul class="submenu">
+							<li class="active">
+								<a href="http://easy-themes.tk/themes/preview/ace/form-elements.html">
+									<i class="icon-double-angle-right"></i>
+									Form Elements
+								</a>
+							</li>
+
+							<li>
+								<a href="http://easy-themes.tk/themes/preview/ace/form-wizard.html">
+									<i class="icon-double-angle-right"></i>
+									Wizard &amp; Validation
+								</a>
+							</li>
+
+							<li>
+								<a href="http://easy-themes.tk/themes/preview/ace/wysiwyg.html">
+									<i class="icon-double-angle-right"></i>
+									Wysiwyg &amp; Markdown
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="http://easy-themes.tk/themes/preview/ace/widgets.html">
+							<i class="icon-list-alt"></i>
+							<span class="menu-text"> Widgets </span>
+						</a>
+					</li>
+
+					<li>
+						<a href="http://easy-themes.tk/themes/preview/ace/calendar.html">
+							<i class="icon-calendar"></i>
+
+							<span class="menu-text">
+								Calendar
+								<span data-original-title="2&nbsp;Important&nbsp;Events" class="badge badge-transparent tooltip-error" title="">
+									<i class="icon-warning-sign red bigger-130"></i>
+								</span>
+							</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="http://easy-themes.tk/themes/preview/ace/gallery.html">
+							<i class="icon-picture"></i>
+							<span class="menu-text"> Gallery </span>
+						</a>
+					</li>
+
+					<li>
+						<a href="#" class="dropdown-toggle">
+							<i class="icon-tag"></i>
+							<span class="menu-text"> More Pages </span>
+
+							<b class="arrow icon-angle-down"></b>
+						</a>
+
+						<ul class="submenu">
+							<li>
+								<a href="http://easy-themes.tk/themes/preview/ace/profile.html">
+									<i class="icon-double-angle-right"></i>
+									User Profile
+								</a>
+							</li>
+
+							<li>
+								<a href="http://easy-themes.tk/themes/preview/ace/pricing.html">
+									<i class="icon-double-angle-right"></i>
+									Pricing Tables
+								</a>
+							</li>
+
+							<li>
+								<a href="http://easy-themes.tk/themes/preview/ace/invoice.html">
+									<i class="icon-double-angle-right"></i>
+									Invoice
+								</a>
+							</li>
+
+							<li>
+								<a href="http://easy-themes.tk/themes/preview/ace/login.html">
+									<i class="icon-double-angle-right"></i>
+									Login &amp; Register
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<li>
+						<a href="#" class="dropdown-toggle">
+							<i class="icon-file-alt"></i>
+
+							<span class="menu-text">
+								Other Pages
+								<span class="badge badge-primary ">4</span>
+							</span>
+
+							<b class="arrow icon-angle-down"></b>
+						</a>
+
+						<ul class="submenu">
+							<li>
+								<a href="http://easy-themes.tk/themes/preview/ace/error-404.html">
+									<i class="icon-double-angle-right"></i>
+									Error 404
+								</a>
+							</li>
+
+							<li>
+								<a href="http://easy-themes.tk/themes/preview/ace/error-500.html">
+									<i class="icon-double-angle-right"></i>
+									Error 500
+								</a>
+							</li>
+
+							<li>
+								<a href="http://easy-themes.tk/themes/preview/ace/grid.html">
+									<i class="icon-double-angle-right"></i>
+									Grid
+								</a>
+							</li>
+
+							<li>
+								<a href="http://easy-themes.tk/themes/preview/ace/blank.html">
+									<i class="icon-double-angle-right"></i>
+									Blank Page
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul><!--/.nav-list-->
+
+				<div class="sidebar-collapse" id="sidebar-collapse">
+					<i class="icon-double-angle-left"></i>
+				</div>
+			</div>
+
+			<div class="main-content">
+				<div class="breadcrumbs" id="breadcrumbs">
+					<ul class="breadcrumb">
+						<li>
+							<i class="icon-home home-icon"></i>
+							<a href="#">Home</a>
+
+							<span class="divider">
+								<i class="icon-angle-right arrow-icon"></i>
+							</span>
+						</li>
+
+						<li>
+							<a href="#">Forms</a>
+
+							<span class="divider">
+								<i class="icon-angle-right arrow-icon"></i>
+							</span>
+						</li>
+						<li class="active">Form Elements</li>
+					</ul><!--.breadcrumb-->
+
+					<div class="nav-search" id="nav-search">
+						<form class="form-search">
+							<span class="input-icon">
+								<input placeholder="Search ..." class="input-small nav-search-input" id="nav-search-input" autocomplete="off" type="text">
+								<i class="icon-search nav-search-icon"></i>
+							</span>
+						</form>
+					</div><!--#nav-search-->
+				</div>
+
+				<div class="page-content">
+					<div class="page-header position-relative">
+						<h1>
+							Form Elements
+							<small>
+								<i class="icon-double-angle-right"></i>
+								Common form elements and layouts
+							</small>
+						</h1>
+					</div><!--/.page-header-->
+
+					<div class="row-fluid">
+						<div class="span12">
+							<!--PAGE CONTENT BEGINS-->
+
+							<form class="form-horizontal">
+								<div class="control-group">
+									<label class="control-label" for="form-field-1">Text Field</label>
+
+									<div class="controls">
+										<input id="form-field-1" placeholder="Username" type="text">
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="form-field-2">Password Field</label>
+
+									<div class="controls">
+										<input id="form-field-2" placeholder="Password" type="password">
+										<span class="help-inline">Inline help text</span>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="form-input-readonly">Readonly field</label>
+
+									<div class="controls">
+										<input readonly="readonly" id="form-input-readonly" value="This text field is readonly!" type="text">
+										&nbsp; &nbsp;
+										<input id="id-disable-check" type="checkbox">
+										<label class="lbl" for="id-disable-check"> Disable it!</label>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="form-field-4">Relative Sizing</label>
+
+									<div class="controls">
+										<input class="input-mini" id="form-field-4" placeholder=".input-mini" type="text">
+										<div aria-disabled="false" style="width: 200px;" class="help-block ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="input-size-slider"><div style="width: 0%;" class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div><a style="left: 0%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></div>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="form-field-5">Grid Sizing</label>
+
+									<div class="controls">
+										<input class="span1" id="form-field-5" placeholder=".span1" type="text">
+										<input class="span11" placeholder=".span11" type="text">
+										<div aria-disabled="false" class="help-block ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" id="input-span-slider"><div style="width: 0%;" class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div><a style="left: 0%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></div>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label">Input with Icon</label>
+
+									<div class="controls">
+										<span class="input-icon">
+											<input id="form-field-icon-1" type="text">
+											<i class="icon-leaf"></i>
+										</span>
+
+										<span class="input-icon input-icon-right">
+											<input id="form-field-icon-2" type="text">
+											<i class="icon-leaf"></i>
+										</span>
+									</div>
+								</div>
+
+								<div class="control-group">
+									<label class="control-label" for="form-field-6">Tooltip and help button</label>
+
+									<div class="controls">
+										<input data-original-title="Hello Tooltip!" data-rel="tooltip" id="form-field-6" placeholder="Tooltip on hover" title="" data-placement="bottom" type="text">
+										<span data-original-title="Popover on hover" class="help-button" data-rel="popover" data-trigger="hover" data-placement="left" data-content="More details." title="">?</span>
+									</div>
+								</div>
+
+								<div class="space-4"></div>
+
+								<div class="control-group">
+									<label class="control-label" for="form-field-tags">Tag input</label>
+
+									<div class="controls"><div class="tags"><span class="tag">Tag Input Control<button type="button" class="close">×</button></span><input name="tags" id="form-field-tags" value="Tag Input Control" placeholder="Enter tags ..." type="hidden"><input placeholder="Enter tags ..." type="text"></div>
+										
+									</div>
+								</div>
+
+								<div class="form-actions">
+									<button class="btn btn-info" type="button">
+										<i class="icon-ok bigger-110"></i>
+										Submit
+									</button>
+
+									&nbsp; &nbsp; &nbsp;
+									<button class="btn" type="reset">
+										<i class="icon-undo bigger-110"></i>
+										Reset
+									</button>
+								</div>
+
+								<div class="hr"></div>
+
+								<div class="row-fluid">
+									<div class="span4">
+										<div class="widget-box">
+											<div class="widget-header">
+												<h4>Text Area</h4>
+
+												<span class="widget-toolbar">
+													<a href="#" data-action="collapse">
+														<i class="icon-chevron-up"></i>
+													</a>
+
+													<a href="#" data-action="close">
+														<i class="icon-remove"></i>
+													</a>
+												</span>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+													<div class="row-fluid">
+														<label for="form-field-8">Default</label>
+
+														<textarea class="span12" id="form-field-8" placeholder="Default Text"></textarea>
+													</div>
+
+													<hr>
+													<div class="row-fluid">
+														<label for="form-field-9">With Character Limit</label>
+
+														<textarea maxlength="50" class="span12 limited" id="form-field-9" data-maxlength="50"></textarea>
+													</div>
+
+													<hr>
+													<div class="row-fluid">
+														<label for="form-field-11">Autosize</label>
+
+														<textarea style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 67px;" id="form-field-11" class="autosize-transition span12"></textarea>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!--/span-->
+
+									<div class="span4">
+										<div class="widget-box">
+											<div class="widget-header">
+												<h4>Masked Input</h4>
+
+												<span class="widget-toolbar">
+													<a href="#" data-action="settings">
+														<i class="icon-cog"></i>
+													</a>
+
+													<a href="#" data-action="reload">
+														<i class="icon-refresh"></i>
+													</a>
+
+													<a href="#" data-action="collapse">
+														<i class="icon-chevron-up"></i>
+													</a>
+
+													<a href="#" data-action="close">
+														<i class="icon-remove"></i>
+													</a>
+												</span>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+													<div class="row-fluid">
+														<label for="form-field-mask-1">
+															Date
+															<small class="text-success">99/99/9999</small>
+														</label>
+
+														<div class="input-append">
+															<input class="input-small input-mask-date" id="form-field-mask-1" type="text">
+															<span class="btn btn-small">
+																<i class="icon-calendar bigger-110"></i>
+																Go!
+															</span>
+														</div>
+													</div>
+
+													<hr>
+													<div class="row-fluid">
+														<label for="form-field-mask-2">
+															Phone
+															<small class="text-warning">(999) 999-9999</small>
+														</label>
+
+														<div class="input-prepend">
+															<span class="add-on">
+																<i class="icon-phone"></i>
+															</span>
+
+															<input class="input-medium input-mask-phone" id="form-field-mask-2" type="text">
+														</div>
+													</div>
+
+													<hr>
+													<div class="row-fluid">
+														<label for="form-field-mask-3">
+															Product Key
+															<small class="text-error">a*-999-a999</small>
+														</label>
+
+														<div class="input-prepend">
+															<span class="add-on">
+																<i class="icon-key"></i>
+															</span>
+
+															<input class="input-medium input-mask-product" id="form-field-mask-3" type="text">
+														</div>
+													</div>
+
+													<hr>
+													<div class="row-fluid">
+														<label for="form-field-mask-4">
+															Eye Script
+															<small class="text-info">~9.99 ~9.99 999</small>
+														</label>
+
+														<div>
+															<input class="input-medium input-mask-eyescript" id="form-field-mask-4" type="text">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!--/span-->
+
+									<div class="span4">
+										<div class="widget-box">
+											<div class="widget-header">
+												<h4>Select Box</h4>
+
+												<span class="widget-toolbar">
+													<a href="#" data-action="settings">
+														<i class="icon-cog"></i>
+													</a>
+
+													<a href="#" data-action="reload">
+														<i class="icon-refresh"></i>
+													</a>
+
+													<a href="#" data-action="collapse">
+														<i class="icon-chevron-up"></i>
+													</a>
+
+													<a href="#" data-action="close">
+														<i class="icon-remove"></i>
+													</a>
+												</span>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+													<div class="row-fluid">
+														<label for="form-field-select-1">Default</label>
+
+														<select id="form-field-select-1">
+															<option selected="selected" value=""></option>
+															<option value="AL">Alabama</option>
+															<option value="AK">Alaska</option>
+															<option value="AZ">Arizona</option>
+															<option value="AR">Arkansas</option>
+															<option value="CA">California</option>
+															<option value="CO">Colorado</option>
+															<option value="CT">Connecticut</option>
+															<option value="DE">Delaware</option>
+															<option value="FL">Florida</option>
+															<option value="GA">Georgia</option>
+															<option value="HI">Hawaii</option>
+															<option value="ID">Idaho</option>
+															<option value="IL">Illinois</option>
+															<option value="IN">Indiana</option>
+															<option value="IA">Iowa</option>
+															<option value="KS">Kansas</option>
+															<option value="KY">Kentucky</option>
+															<option value="LA">Louisiana</option>
+															<option value="ME">Maine</option>
+															<option value="MD">Maryland</option>
+															<option value="MA">Massachusetts</option>
+															<option value="MI">Michigan</option>
+															<option value="MN">Minnesota</option>
+															<option value="MS">Mississippi</option>
+															<option value="MO">Missouri</option>
+															<option value="MT">Montana</option>
+															<option value="NE">Nebraska</option>
+															<option value="NV">Nevada</option>
+															<option value="NH">New Hampshire</option>
+															<option value="NJ">New Jersey</option>
+															<option value="NM">New Mexico</option>
+															<option value="NY">New York</option>
+															<option value="NC">North Carolina</option>
+															<option value="ND">North Dakota</option>
+															<option value="OH">Ohio</option>
+															<option value="OK">Oklahoma</option>
+															<option value="OR">Oregon</option>
+															<option value="PA">Pennsylvania</option>
+															<option value="RI">Rhode Island</option>
+															<option value="SC">South Carolina</option>
+															<option value="SD">South Dakota</option>
+															<option value="TN">Tennessee</option>
+															<option value="TX">Texas</option>
+															<option value="UT">Utah</option>
+															<option value="VT">Vermont</option>
+															<option value="VA">Virginia</option>
+															<option value="WA">Washington</option>
+															<option value="WV">West Virginia</option>
+															<option value="WI">Wisconsin</option>
+															<option value="WY">Wyoming</option>
+														</select>
+													</div>
+
+													<hr>
+													<div class="row-fluid">
+														<label for="form-field-select-2">Multiple</label>
+
+														<select id="form-field-select-2" multiple="multiple">
+															<option value="AL">Alabama</option>
+															<option value="AK">Alaska</option>
+															<option value="AZ">Arizona</option>
+															<option value="AR">Arkansas</option>
+															<option value="CA">California</option>
+															<option value="CO">Colorado</option>
+															<option value="CT">Connecticut</option>
+															<option value="DE">Delaware</option>
+															<option value="FL">Florida</option>
+															<option value="GA">Georgia</option>
+															<option value="HI">Hawaii</option>
+															<option value="ID">Idaho</option>
+															<option value="IL">Illinois</option>
+															<option value="IN">Indiana</option>
+															<option value="IA">Iowa</option>
+															<option value="KS">Kansas</option>
+															<option value="KY">Kentucky</option>
+															<option value="LA">Louisiana</option>
+															<option value="ME">Maine</option>
+															<option value="MD">Maryland</option>
+															<option value="MA">Massachusetts</option>
+															<option value="MI">Michigan</option>
+															<option value="MN">Minnesota</option>
+															<option value="MS">Mississippi</option>
+															<option value="MO">Missouri</option>
+															<option value="MT">Montana</option>
+															<option value="NE">Nebraska</option>
+															<option value="NV">Nevada</option>
+															<option value="NH">New Hampshire</option>
+															<option value="NJ">New Jersey</option>
+															<option value="NM">New Mexico</option>
+															<option value="NY">New York</option>
+															<option value="NC">North Carolina</option>
+															<option value="ND">North Dakota</option>
+															<option value="OH">Ohio</option>
+															<option value="OK">Oklahoma</option>
+															<option value="OR">Oregon</option>
+															<option value="PA">Pennsylvania</option>
+															<option value="RI">Rhode Island</option>
+															<option value="SC">South Carolina</option>
+															<option value="SD">South Dakota</option>
+															<option value="TN">Tennessee</option>
+															<option value="TX">Texas</option>
+															<option value="UT">Utah</option>
+															<option value="VT">Vermont</option>
+															<option value="VA">Virginia</option>
+															<option value="WA">Washington</option>
+															<option value="WV">West Virginia</option>
+															<option value="WI">Wisconsin</option>
+															<option value="WY">Wyoming</option>
+														</select>
+													</div>
+
+													<hr>
+													<div class="row-fluid">
+														<label for="form-field-select-3">Chosen</label>
+
+														<select style="display: none;" class="chzn-select chzn-done" id="form-field-select-3" data-placeholder="Choose a Country...">
+															<option selected="selected" value=""></option>
+															<option value="AL">Alabama</option>
+															<option value="AK">Alaska</option>
+															<option value="AZ">Arizona</option>
+															<option value="AR">Arkansas</option>
+															<option value="CA">California</option>
+															<option value="CO">Colorado</option>
+															<option value="CT">Connecticut</option>
+															<option value="DE">Delaware</option>
+															<option value="FL">Florida</option>
+															<option value="GA">Georgia</option>
+															<option value="HI">Hawaii</option>
+															<option value="ID">Idaho</option>
+															<option value="IL">Illinois</option>
+															<option value="IN">Indiana</option>
+															<option value="IA">Iowa</option>
+															<option value="KS">Kansas</option>
+															<option value="KY">Kentucky</option>
+															<option value="LA">Louisiana</option>
+															<option value="ME">Maine</option>
+															<option value="MD">Maryland</option>
+															<option value="MA">Massachusetts</option>
+															<option value="MI">Michigan</option>
+															<option value="MN">Minnesota</option>
+															<option value="MS">Mississippi</option>
+															<option value="MO">Missouri</option>
+															<option value="MT">Montana</option>
+															<option value="NE">Nebraska</option>
+															<option value="NV">Nevada</option>
+															<option value="NH">New Hampshire</option>
+															<option value="NJ">New Jersey</option>
+															<option value="NM">New Mexico</option>
+															<option value="NY">New York</option>
+															<option value="NC">North Carolina</option>
+															<option value="ND">North Dakota</option>
+															<option value="OH">Ohio</option>
+															<option value="OK">Oklahoma</option>
+															<option value="OR">Oregon</option>
+															<option value="PA">Pennsylvania</option>
+															<option value="RI">Rhode Island</option>
+															<option value="SC">South Carolina</option>
+															<option value="SD">South Dakota</option>
+															<option value="TN">Tennessee</option>
+															<option value="TX">Texas</option>
+															<option value="UT">Utah</option>
+															<option value="VT">Vermont</option>
+															<option value="VA">Virginia</option>
+															<option value="WA">Washington</option>
+															<option value="WV">West Virginia</option>
+															<option value="WI">Wisconsin</option>
+															<option value="WY">Wyoming</option>
+														</select><div title="" style="width: 220px;" class="chzn-container chzn-container-single" id="form_field_select_3_chzn"><a href="javascript:void(0)" class="chzn-single chzn-default" tabindex="-1"><span>Choose a Country...</span><div><b></b></div></a><div class="chzn-drop"><div class="chzn-search"><input autocomplete="off" type="text"></div><ul class="chzn-results"><li id="form_field_select_3_chzn_o_1" class="active-result" style="">Alabama</li><li id="form_field_select_3_chzn_o_2" class="active-result" style="">Alaska</li><li id="form_field_select_3_chzn_o_3" class="active-result" style="">Arizona</li><li id="form_field_select_3_chzn_o_4" class="active-result" style="">Arkansas</li><li id="form_field_select_3_chzn_o_5" class="active-result" style="">California</li><li id="form_field_select_3_chzn_o_6" class="active-result" style="">Colorado</li><li id="form_field_select_3_chzn_o_7" class="active-result" style="">Connecticut</li><li id="form_field_select_3_chzn_o_8" class="active-result" style="">Delaware</li><li id="form_field_select_3_chzn_o_9" class="active-result" style="">Florida</li><li id="form_field_select_3_chzn_o_10" class="active-result" style="">Georgia</li><li id="form_field_select_3_chzn_o_11" class="active-result" style="">Hawaii</li><li id="form_field_select_3_chzn_o_12" class="active-result" style="">Idaho</li><li id="form_field_select_3_chzn_o_13" class="active-result" style="">Illinois</li><li id="form_field_select_3_chzn_o_14" class="active-result" style="">Indiana</li><li id="form_field_select_3_chzn_o_15" class="active-result" style="">Iowa</li><li id="form_field_select_3_chzn_o_16" class="active-result" style="">Kansas</li><li id="form_field_select_3_chzn_o_17" class="active-result" style="">Kentucky</li><li id="form_field_select_3_chzn_o_18" class="active-result" style="">Louisiana</li><li id="form_field_select_3_chzn_o_19" class="active-result" style="">Maine</li><li id="form_field_select_3_chzn_o_20" class="active-result" style="">Maryland</li><li id="form_field_select_3_chzn_o_21" class="active-result" style="">Massachusetts</li><li id="form_field_select_3_chzn_o_22" class="active-result" style="">Michigan</li><li id="form_field_select_3_chzn_o_23" class="active-result" style="">Minnesota</li><li id="form_field_select_3_chzn_o_24" class="active-result" style="">Mississippi</li><li id="form_field_select_3_chzn_o_25" class="active-result" style="">Missouri</li><li id="form_field_select_3_chzn_o_26" class="active-result" style="">Montana</li><li id="form_field_select_3_chzn_o_27" class="active-result" style="">Nebraska</li><li id="form_field_select_3_chzn_o_28" class="active-result" style="">Nevada</li><li id="form_field_select_3_chzn_o_29" class="active-result" style="">New Hampshire</li><li id="form_field_select_3_chzn_o_30" class="active-result" style="">New Jersey</li><li id="form_field_select_3_chzn_o_31" class="active-result" style="">New Mexico</li><li id="form_field_select_3_chzn_o_32" class="active-result" style="">New York</li><li id="form_field_select_3_chzn_o_33" class="active-result" style="">North Carolina</li><li id="form_field_select_3_chzn_o_34" class="active-result" style="">North Dakota</li><li id="form_field_select_3_chzn_o_35" class="active-result" style="">Ohio</li><li id="form_field_select_3_chzn_o_36" class="active-result" style="">Oklahoma</li><li id="form_field_select_3_chzn_o_37" class="active-result" style="">Oregon</li><li id="form_field_select_3_chzn_o_38" class="active-result" style="">Pennsylvania</li><li id="form_field_select_3_chzn_o_39" class="active-result" style="">Rhode Island</li><li id="form_field_select_3_chzn_o_40" class="active-result" style="">South Carolina</li><li id="form_field_select_3_chzn_o_41" class="active-result" style="">South Dakota</li><li id="form_field_select_3_chzn_o_42" class="active-result" style="">Tennessee</li><li id="form_field_select_3_chzn_o_43" class="active-result" style="">Texas</li><li id="form_field_select_3_chzn_o_44" class="active-result" style="">Utah</li><li id="form_field_select_3_chzn_o_45" class="active-result" style="">Vermont</li><li id="form_field_select_3_chzn_o_46" class="active-result" style="">Virginia</li><li id="form_field_select_3_chzn_o_47" class="active-result" style="">Washington</li><li id="form_field_select_3_chzn_o_48" class="active-result" style="">West Virginia</li><li id="form_field_select_3_chzn_o_49" class="active-result" style="">Wisconsin</li><li id="form_field_select_3_chzn_o_50" class="active-result" style="">Wyoming</li></ul></div></div>
+													</div>
+
+													<hr>
+													<div class="row-fluid">
+														<label for="form-field-select-4">Chosen Multiple</label>
+
+														<select style="display: none;" multiple="multiple" class="chzn-select chzn-done" id="form-field-select-4" data-placeholder="Choose a Country...">
+															<option value=""></option>
+															<option value="AL">Alabama</option>
+															<option value="AK">Alaska</option>
+															<option value="AZ">Arizona</option>
+															<option value="AR">Arkansas</option>
+															<option value="CA">California</option>
+															<option value="CO">Colorado</option>
+															<option value="CT">Connecticut</option>
+															<option value="DE">Delaware</option>
+															<option value="FL">Florida</option>
+															<option value="GA">Georgia</option>
+															<option value="HI">Hawaii</option>
+															<option value="ID">Idaho</option>
+															<option value="IL">Illinois</option>
+															<option value="IN">Indiana</option>
+															<option value="IA">Iowa</option>
+															<option value="KS">Kansas</option>
+															<option value="KY">Kentucky</option>
+															<option value="LA">Louisiana</option>
+															<option value="ME">Maine</option>
+															<option value="MD">Maryland</option>
+															<option value="MA">Massachusetts</option>
+															<option value="MI">Michigan</option>
+															<option value="MN">Minnesota</option>
+															<option value="MS">Mississippi</option>
+															<option value="MO">Missouri</option>
+															<option value="MT">Montana</option>
+															<option value="NE">Nebraska</option>
+															<option value="NV">Nevada</option>
+															<option value="NH">New Hampshire</option>
+															<option value="NJ">New Jersey</option>
+															<option value="NM">New Mexico</option>
+															<option value="NY">New York</option>
+															<option value="NC">North Carolina</option>
+															<option value="ND">North Dakota</option>
+															<option value="OH">Ohio</option>
+															<option value="OK">Oklahoma</option>
+															<option value="OR">Oregon</option>
+															<option value="PA">Pennsylvania</option>
+															<option value="RI">Rhode Island</option>
+															<option value="SC">South Carolina</option>
+															<option value="SD">South Dakota</option>
+															<option value="TN">Tennessee</option>
+															<option value="TX">Texas</option>
+															<option value="UT">Utah</option>
+															<option value="VT">Vermont</option>
+															<option value="VA">Virginia</option>
+															<option value="WA">Washington</option>
+															<option value="WV">West Virginia</option>
+															<option value="WI">Wisconsin</option>
+															<option value="WY">Wyoming</option>
+														</select><div title="" style="width: 220px;" class="chzn-container chzn-container-multi" id="form_field_select_4_chzn"><ul class="chzn-choices"><li class="search-field"><input value="Choose a Country..." class="default" autocomplete="off" style="width: 140px;" type="text"></li></ul><div class="chzn-drop"><ul class="chzn-results"><li id="form_field_select_4_chzn_o_1" class="active-result" style="">Alabama</li><li id="form_field_select_4_chzn_o_2" class="active-result" style="">Alaska</li><li id="form_field_select_4_chzn_o_3" class="active-result" style="">Arizona</li><li id="form_field_select_4_chzn_o_4" class="active-result" style="">Arkansas</li><li id="form_field_select_4_chzn_o_5" class="active-result" style="">California</li><li id="form_field_select_4_chzn_o_6" class="active-result" style="">Colorado</li><li id="form_field_select_4_chzn_o_7" class="active-result" style="">Connecticut</li><li id="form_field_select_4_chzn_o_8" class="active-result" style="">Delaware</li><li id="form_field_select_4_chzn_o_9" class="active-result" style="">Florida</li><li id="form_field_select_4_chzn_o_10" class="active-result" style="">Georgia</li><li id="form_field_select_4_chzn_o_11" class="active-result" style="">Hawaii</li><li id="form_field_select_4_chzn_o_12" class="active-result" style="">Idaho</li><li id="form_field_select_4_chzn_o_13" class="active-result" style="">Illinois</li><li id="form_field_select_4_chzn_o_14" class="active-result" style="">Indiana</li><li id="form_field_select_4_chzn_o_15" class="active-result" style="">Iowa</li><li id="form_field_select_4_chzn_o_16" class="active-result" style="">Kansas</li><li id="form_field_select_4_chzn_o_17" class="active-result" style="">Kentucky</li><li id="form_field_select_4_chzn_o_18" class="active-result" style="">Louisiana</li><li id="form_field_select_4_chzn_o_19" class="active-result" style="">Maine</li><li id="form_field_select_4_chzn_o_20" class="active-result" style="">Maryland</li><li id="form_field_select_4_chzn_o_21" class="active-result" style="">Massachusetts</li><li id="form_field_select_4_chzn_o_22" class="active-result" style="">Michigan</li><li id="form_field_select_4_chzn_o_23" class="active-result" style="">Minnesota</li><li id="form_field_select_4_chzn_o_24" class="active-result" style="">Mississippi</li><li id="form_field_select_4_chzn_o_25" class="active-result" style="">Missouri</li><li id="form_field_select_4_chzn_o_26" class="active-result" style="">Montana</li><li id="form_field_select_4_chzn_o_27" class="active-result" style="">Nebraska</li><li id="form_field_select_4_chzn_o_28" class="active-result" style="">Nevada</li><li id="form_field_select_4_chzn_o_29" class="active-result" style="">New Hampshire</li><li id="form_field_select_4_chzn_o_30" class="active-result" style="">New Jersey</li><li id="form_field_select_4_chzn_o_31" class="active-result" style="">New Mexico</li><li id="form_field_select_4_chzn_o_32" class="active-result" style="">New York</li><li id="form_field_select_4_chzn_o_33" class="active-result" style="">North Carolina</li><li id="form_field_select_4_chzn_o_34" class="active-result" style="">North Dakota</li><li id="form_field_select_4_chzn_o_35" class="active-result" style="">Ohio</li><li id="form_field_select_4_chzn_o_36" class="active-result" style="">Oklahoma</li><li id="form_field_select_4_chzn_o_37" class="active-result" style="">Oregon</li><li id="form_field_select_4_chzn_o_38" class="active-result" style="">Pennsylvania</li><li id="form_field_select_4_chzn_o_39" class="active-result" style="">Rhode Island</li><li id="form_field_select_4_chzn_o_40" class="active-result" style="">South Carolina</li><li id="form_field_select_4_chzn_o_41" class="active-result" style="">South Dakota</li><li id="form_field_select_4_chzn_o_42" class="active-result" style="">Tennessee</li><li id="form_field_select_4_chzn_o_43" class="active-result" style="">Texas</li><li id="form_field_select_4_chzn_o_44" class="active-result" style="">Utah</li><li id="form_field_select_4_chzn_o_45" class="active-result" style="">Vermont</li><li id="form_field_select_4_chzn_o_46" class="active-result" style="">Virginia</li><li id="form_field_select_4_chzn_o_47" class="active-result" style="">Washington</li><li id="form_field_select_4_chzn_o_48" class="active-result" style="">West Virginia</li><li id="form_field_select_4_chzn_o_49" class="active-result" style="">Wisconsin</li><li id="form_field_select_4_chzn_o_50" class="active-result" style="">Wyoming</li></ul></div></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div><!--/span-->
+								</div><!--/row-->
+
+								<div class="space-24"></div>
+
+								<h3 class="header smaller lighter blue">
+									Checkboxes &amp; Radio
+									<small>All Checkboxes, Radios and Switch Buttons Are Pure CSS</small>
+								</h3>
+
+								<div class="row-fluid">
+									<div class="span5">
+										<div class="control-group">
+											<label class="control-label">Checkbox</label>
+
+											<div class="controls">
+												<label>
+													<input name="form-field-checkbox" type="checkbox">
+													<span class="lbl"> choice 1</span>
+												</label>
+
+												<label>
+													<input name="form-field-checkbox" type="checkbox">
+													<span class="lbl"> choice 2</span>
+												</label>
+
+												<label>
+													<input name="form-field-checkbox" class="ace-checkbox-2" type="checkbox">
+													<span class="lbl"> choice 3</span>
+												</label>
+
+												<label>
+													<input name="form-field-checkbox" disabled="disabled" type="checkbox">
+													<span class="lbl"> disabled</span>
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="span6">
+										<div class="control-group">
+											<label class="control-label">Radio</label>
+
+											<div class="controls">
+												<label>
+													<input name="form-field-radio" type="radio">
+													<span class="lbl"> radio option 1</span>
+												</label>
+
+												<label>
+													<input name="form-field-radio" type="radio">
+													<span class="lbl"> radio option 2</span>
+												</label>
+
+												<label>
+													<input name="form-field-radio" type="radio">
+													<span class="lbl"> radio option 3</span>
+												</label>
+
+												<label>
+													<input disabled="disabled" name="form-field-radio" type="radio">
+													<span class="lbl"> disabled</span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div><!--/row-->
+
+								<hr>
+								<div class="control-group">
+									<label class="control-label">On/Off Switches</label>
+
+									<div class="controls">
+										<div class="row-fluid">
+											<div class="span3">
+												<label>
+													<input name="switch-field-1" class="ace-switch" type="checkbox">
+													<span class="lbl"></span>
+												</label>
+											</div>
+
+											<div class="span3">
+												<label>
+													<input name="switch-field-1" class="ace-switch ace-switch-2" type="checkbox">
+													<span class="lbl"></span>
+												</label>
+											</div>
+
+											<div class="span3">
+												<label>
+													<input name="switch-field-1" class="ace-switch ace-switch-3" type="checkbox">
+													<span class="lbl"></span>
+												</label>
+											</div>
+										</div>
+
+										<div class="row-fluid">
+											<div class="span3">
+												<label>
+													<input name="switch-field-1" class="ace-switch ace-switch-4" type="checkbox">
+													<span class="lbl"></span>
+												</label>
+											</div>
+
+											<div class="span3">
+												<label>
+													<input name="switch-field-1" class="ace-switch ace-switch-5" type="checkbox">
+													<span class="lbl"></span>
+												</label>
+											</div>
+
+											<div class="span3">
+												<label>
+													<input name="switch-field-1" class="ace-switch ace-switch-6" type="checkbox">
+													<span class="lbl"></span>
+												</label>
+											</div>
+
+											<div class="span3">
+												<label>
+													<input name="switch-field-1" class="ace-switch ace-switch-7" type="checkbox">
+													<span class="lbl"></span>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<hr>
+								<div class="row-fluid">
+									<div class="span4">
+										<div class="widget-box">
+											<div class="widget-header">
+												<h4>Custom File Input</h4>
+
+												<span class="widget-toolbar">
+													<a href="#" data-action="collapse">
+														<i class="icon-chevron-up"></i>
+													</a>
+
+													<a href="#" data-action="close">
+														<i class="icon-remove"></i>
+													</a>
+												</span>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+													<div class="ace-file-input"><input id="id-input-file-2" type="file"><label data-title="Choose"><span data-title="No File ..."><i class="icon-upload-alt"></i></span></label><a class="remove" href="#"><i class="icon-remove"></i></a></div>
+													<div class="ace-file-input ace-file-multiple"><input multiple="" id="id-input-file-3" type="file"><label data-title="Drop files here or click to choose"><span data-title="No File ..."><i class="icon-cloud-upload"></i></span></label><a class="remove" href="#"><i class="icon-remove"></i></a></div>
+													<label>
+														<input name="file-format" id="id-file-format" type="checkbox">
+														<span class="lbl"> Allow only images</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="span4">
+										<div class="widget-box">
+											<div class="widget-header">
+												<h4>jQuery UI Sliders</h4>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+													<div class="row-fluid">
+														<div class="span1">
+															<div aria-disabled="false" class="ui-slider ui-slider-vertical ui-widget ui-widget-content ui-corner-all" style="height: 200px;" id="slider-range"><div style="bottom: 17%; height: 50%;" class="ui-slider-range ui-widget-header ui-corner-all"></div><a style="bottom: 17%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a><a style="bottom: 67%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></div>
+														</div>
+
+														<div class="span11">
+															<div id="eq">
+																<span aria-disabled="false" style="width: 90%; float: left; margin: 15px;" class="ui-slider-green ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div style="width: 77%;" class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div><a style="left: 77%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></span>
+																<span aria-disabled="false" style="width: 90%; float: left; margin: 15px;" class="ui-slider-red ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div style="width: 55%;" class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div><a style="left: 55%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></span>
+																<span aria-disabled="false" style="width: 90%; float: left; margin: 15px;" class="ui-slider-purple ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div style="width: 33%;" class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div><a style="left: 33%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></span>
+																<span aria-disabled="false" style="width: 90%; float: left; margin: 15px;" class="ui-slider-orange ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div style="width: 40%;" class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div><a style="left: 40%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></span>
+																<span aria-disabled="false" style="width: 90%; float: left; margin: 15px;" class="ui-slider-dark ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div style="width: 88%;" class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min"></div><a style="left: 88%;" class="ui-slider-handle ui-state-default ui-corner-all" href="#"></a></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="span4">
+										<div class="widget-box">
+											<div class="widget-header">
+												<h4>Spinners</h4>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+													<div class="ace-spinner"><div class="input-append"><input value="0" maxlength="3" style="width: 30px;" class="input-mini spinner-input" id="spinner1" type="text"><div class="spinner-buttons btn-group btn-group-vertical">						<button type="button" class="btn spinner-up btn-mini btn-info">						<i class="icon-chevron-up"></i>						</button>						<button type="button" class="btn spinner-down btn-mini btn-info">						<i class="icon-chevron-down"></i>						</button>						</div></div></div>
+													<div class="space-6"></div>
+
+													<div class="ace-spinner"><div class="input-append"><input value="0" maxlength="5" style="width: 50px;" class="input-mini spinner-input" id="spinner2" type="text"><div class="spinner-buttons btn-group btn-group-vertical">						<button type="button" class="btn spinner-up btn-mini ">						<i class="icon-caret-up"></i>						</button>						<button type="button" class="btn spinner-down btn-mini ">						<i class="icon-caret-down"></i>						</button>						</div></div></div>
+													<div class="space-6"></div>
+
+													<div class="ace-spinner"><div class="input-append"><input value="0" maxlength="3" style="width: 30px;" class="input-mini spinner-input" id="spinner3" type="text"><div class="spinner-buttons btn-group btn-group-vertical">						<button type="button" class="btn spinner-up btn-mini btn-success">						<i class="icon-plus"></i>						</button>						<button type="button" class="btn spinner-down btn-mini btn-danger">						<i class="icon-minus"></i>						</button>						</div></div></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<hr>
+								<div class="row-fluid">
+									<div class="span4">
+										<div class="widget-box">
+											<div class="widget-header">
+												<h4>Date Picker</h4>
+
+												<span class="widget-toolbar">
+													<a href="#" data-action="settings">
+														<i class="icon-cog"></i>
+													</a>
+
+													<a href="#" data-action="reload">
+														<i class="icon-refresh"></i>
+													</a>
+
+													<a href="#" data-action="collapse">
+														<i class="icon-chevron-up"></i>
+													</a>
+
+													<a href="#" data-action="close">
+														<i class="icon-remove"></i>
+													</a>
+												</span>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+													<div class="row-fluid">
+														<label for="id-date-picker-1">Date Picker</label>
+													</div>
+
+													<div class="control-group">
+														<div class="row-fluid input-append">
+															<input class="span10 date-picker" id="id-date-picker-1" data-date-format="dd-mm-yyyy" type="text">
+															<span class="add-on">
+																<i class="icon-calendar"></i>
+															</span>
+														</div>
+													</div>
+
+													<hr>
+													<div class="row-fluid">
+														<label for="id-date-range-picker-1">Date Range Picker</label>
+													</div>
+
+													<div class="control-group">
+														<div class="row-fluid input-prepend">
+															<span class="add-on">
+																<i class="icon-calendar"></i>
+															</span>
+
+															<input class="span10" name="date-range-picker" id="id-date-range-picker-1" type="text">
+														</div>
+													</div>
+
+													<hr>
+													<div class="row-fluid">
+														<label for="timepicker1">Time Picker</label>
+													</div>
+
+													<div class="control-group">
+														<div class="input-append bootstrap-timepicker"><div class="bootstrap-timepicker-widget dropdown-menu"><table><tbody><tr><td><a href="#" data-action="incrementHour"><i class="icon-chevron-up"></i></a></td><td class="separator">&nbsp;</td><td><a href="#" data-action="incrementMinute"><i class="icon-chevron-up"></i></a></td><td class="separator">&nbsp;</td><td><a href="#" data-action="incrementSecond"><i class="icon-chevron-up"></i></a></td></tr><tr><td><input value="15" name="hour" class="bootstrap-timepicker-hour" maxlength="2" type="text"></td> <td class="separator">:</td><td><input value="23" name="minute" class="bootstrap-timepicker-minute" maxlength="2" type="text"></td> <td class="separator">:</td><td><input value="00" name="second" class="bootstrap-timepicker-second" maxlength="2" type="text"></td></tr><tr><td><a href="#" data-action="decrementHour"><i class="icon-chevron-down"></i></a></td><td class="separator"></td><td><a href="#" data-action="decrementMinute"><i class="icon-chevron-down"></i></a></td><td class="separator">&nbsp;</td><td><a href="#" data-action="decrementSecond"><i class="icon-chevron-down"></i></a></td></tr></tbody></table></div>
+															<input value="15:23:00" id="timepicker1" class="input-small" type="text">
+															<span class="add-on">
+																<i class="icon-time"></i>
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="span4">
+										<div class="widget-box">
+											<div class="widget-header">
+												<h4>
+													<i class="icon-tint"></i>
+													Color Picker
+												</h4>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+													<div class="row-fluid">
+														<label for="colorpicker1">Color Picker</label>
+													</div>
+
+													<div class="control-group">
+														<div class="bootstrap-colorpicker">
+															<input id="colorpicker1" class="input-mini" type="text">
+														</div>
+													</div>
+
+													<hr>
+													<label for="simple-colorpicker-1">Custom Color Picker</label>
+
+													<select style="display: none;" id="simple-colorpicker-1" class="hide">
+														<option value="#ac725e">#ac725e</option>
+														<option value="#d06b64">#d06b64</option>
+														<option value="#f83a22">#f83a22</option>
+														<option value="#fa573c">#fa573c</option>
+														<option value="#ff7537">#ff7537</option>
+														<option value="#ffad46" selected="selected">#ffad46</option>
+														<option value="#42d692">#42d692</option>
+														<option value="#16a765">#16a765</option>
+														<option value="#7bd148">#7bd148</option>
+														<option value="#b3dc6c">#b3dc6c</option>
+														<option value="#fbe983">#fbe983</option>
+														<option value="#fad165">#fad165</option>
+														<option value="#92e1c0">#92e1c0</option>
+														<option value="#9fe1e7">#9fe1e7</option>
+														<option value="#9fc6e7">#9fc6e7</option>
+														<option value="#4986e7">#4986e7</option>
+														<option value="#9a9cff">#9a9cff</option>
+														<option value="#b99aff">#b99aff</option>
+														<option value="#c2c2c2">#c2c2c2</option>
+														<option value="#cabdbf">#cabdbf</option>
+														<option value="#cca6ac">#cca6ac</option>
+														<option value="#f691b2">#f691b2</option>
+														<option value="#cd74e6">#cd74e6</option>
+														<option value="#a47ae2">#a47ae2</option>
+														<option value="#555">#555</option>
+													</select><div class="dropdown dropdown-colorpicker"><a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="btn-colorpicker" style="background-color:#ffad46"></span></a><ul class="dropdown-menu dropdown-caret"><li><a class="colorpick-btn" href="#" style="background-color:#ac725e;" data-color="#ac725e"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#d06b64;" data-color="#d06b64"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#f83a22;" data-color="#f83a22"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#fa573c;" data-color="#fa573c"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#ff7537;" data-color="#ff7537"></a></li><li><a class="colorpick-btn selected" href="#" style="background-color:#ffad46;" data-color="#ffad46"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#42d692;" data-color="#42d692"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#16a765;" data-color="#16a765"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#7bd148;" data-color="#7bd148"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#b3dc6c;" data-color="#b3dc6c"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#fbe983;" data-color="#fbe983"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#fad165;" data-color="#fad165"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#92e1c0;" data-color="#92e1c0"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#9fe1e7;" data-color="#9fe1e7"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#9fc6e7;" data-color="#9fc6e7"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#4986e7;" data-color="#4986e7"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#9a9cff;" data-color="#9a9cff"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#b99aff;" data-color="#b99aff"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#c2c2c2;" data-color="#c2c2c2"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#cabdbf;" data-color="#cabdbf"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#cca6ac;" data-color="#cca6ac"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#f691b2;" data-color="#f691b2"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#cd74e6;" data-color="#cd74e6"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#a47ae2;" data-color="#a47ae2"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#555;" data-color="#555"></a></li></ul></div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="span4">
+										<div class="widget-box">
+											<div class="widget-header">
+												<h4>
+													<i class="icon-dashboard"></i>
+													Knob Input
+												</h4>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+													<div class="control-group">
+														<div class="row-fluid">
+															<div class="span6 center">
+																<div class="knob-container inline">
+																	<div style="display:inline;width:80px;height:80px;"><canvas height="80" width="80"></canvas><input style="width: 44px; height: 26px; position: absolute; vertical-align: middle; margin-top: 26px; margin-left: -62px; border: 0px none; background: none repeat scroll 0% 0% transparent; font: bold 16px Arial; text-align: center; color: rgb(135, 206, 235); padding: 0px;" class="input-small knob" value="15" data-min="0" data-max="100" data-step="10" data-width="80" data-height="80" data-thickness=".2" type="text"></div>
+																</div>
+															</div>
+
+															<div class="span6 center">
+																<div class="knob-container inline">
+																	<div style="display:inline;width:80px;height:80px;"><canvas height="80" width="80"></canvas><input style="width: 44px; height: 26px; position: absolute; vertical-align: middle; margin-top: 26px; margin-left: -62px; border: 0px none; background: none repeat scroll 0% 0% transparent; font: bold 16px Arial; text-align: center; color: rgb(135, 184, 127); padding: 0px;" class="input-small knob" value="41" data-min="0" data-max="100" data-width="80" data-height="80" data-thickness=".2" data-fgcolor="#87B87F" data-displayprevious="true" data-anglearc="250" data-angleoffset="-125" type="text"></div>
+																</div>
+															</div>
+														</div>
+
+														<div class="row-fluid">
+															<div class="span12 center">
+																<div class="knob-container inline">
+																	<div style="display:inline;width:150px;height:150px;"><canvas height="150" width="150"></canvas><input value="0" style="width: 79px; height: 50px; position: absolute; vertical-align: middle; margin-top: 50px; margin-left: -114px; border: 0px none; background: none repeat scroll 0% 0% transparent; font: bold 37px Arial; text-align: center; color: rgb(184, 135, 127); padding: 0px;" class="input-small knob" data-min="0" data-max="10" data-width="150" data-height="150" data-thickness=".2" data-fgcolor="#B8877F" data-angleoffset="90" data-cursor="true" type="text"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+
+							<div class="hr hr-18 dotted hr-double"></div>
+
+							<h4 class="pink">
+								<i class="icon-hand-right green"></i>
+								<a href="#modal-form" role="button" class="blue" data-toggle="modal"> Form Inside a Modal Box </a>
+							</h4>
+
+							<div class="hr hr-18 dotted hr-double"></div>
+							<h4 class="header green">Form Layouts</h4>
+
+							<div class="row-fluid">
+								<div class="span5">
+									<div class="widget-box">
+										<div class="widget-header">
+											<h4>Default</h4>
+										</div>
+
+										<div class="widget-body">
+											<div class="widget-main no-padding">
+												<form>
+													<!--<legend>Form</legend>-->
+
+													<fieldset>
+														<label>Label name</label>
+
+														<input placeholder="Type something…" type="text">
+														<span class="help-block">Example block-level help text here.</span>
+
+														<label class="pull-right">
+															<input type="checkbox">
+															<span class="lbl"> check me out</span>
+														</label>
+													</fieldset>
+
+													<div class="form-actions center">
+														<button onClick="return false;" class="btn btn-small btn-success">
+															Submit
+															<i class="icon-arrow-right icon-on-right bigger-110"></i>
+														</button>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="span7">
+									<div class="row-fluid">
+										<div class="widget-box">
+											<div class="widget-header">
+												<h4>Inline Forms</h4>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+													<form class="form-inline">
+														<input class="input-small" placeholder="Email" type="text">
+														<input class="input-small" placeholder="Password" type="password">
+														<label class="checkbox">
+															<input type="checkbox">
+															<span class="lbl"> remember me</span>
+														</label>
+
+														<button onClick="return false;" class="btn btn-info btn-small">
+															<i class="icon-key bigger-110"></i>
+															Login
+														</button>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="space-6"></div>
+
+									<div class="row-fluid">
+										<div class="widget-box">
+											<div class="widget-header widget-header-small">
+												<h5 class="lighter">Search Form</h5>
+											</div>
+
+											<div class="widget-body">
+												<div class="widget-main">
+													<form class="form-search">
+														<input class="input-medium search-query" type="text">
+														<button onClick="return false;" class="btn btn-purple btn-small">
+															Search
+															<i class="icon-search icon-on-right bigger-110"></i>
+														</button>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div id="modal-form" class="modal hide" tabindex="-1">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">×</button>
+									<h4 class="blue bigger">Please fill the following form fields</h4>
+								</div>
+
+								<div class="modal-body overflow-visible">
+									<div class="row-fluid">
+										<div class="span5">
+											<div class="space"></div>
+
+											<div class="ace-file-input ace-file-multiple"><input type="file"><label data-title="Drop files here or click to choose"><span data-title="No File ..."><i class="icon-cloud-upload"></i></span></label><a class="remove" href="#"><i class="icon-remove"></i></a></div>
+										</div>
+
+										<div class="vspace"></div>
+
+										<div class="span7">
+											<div class="control-group">
+												<label for="form-field-select-3">Location</label>
+
+												<div class="controls">
+													<select style="display: none;" id="selJDC" class="chzn-select chzn-done" data-placeholder="Choose a Country...">
+														<option selected="selected" value=""></option>
+														<option value="AL">Alabama</option>
+														<option value="AK">Alaska</option>
+														<option value="AZ">Arizona</option>
+														<option value="AR">Arkansas</option>
+														<option value="CA">California</option>
+														<option value="CO">Colorado</option>
+														<option value="CT">Connecticut</option>
+														<option value="DE">Delaware</option>
+														<option value="FL">Florida</option>
+														<option value="GA">Georgia</option>
+														<option value="HI">Hawaii</option>
+														<option value="ID">Idaho</option>
+														<option value="IL">Illinois</option>
+														<option value="IN">Indiana</option>
+														<option value="IA">Iowa</option>
+														<option value="KS">Kansas</option>
+														<option value="KY">Kentucky</option>
+														<option value="LA">Louisiana</option>
+														<option value="ME">Maine</option>
+														<option value="MD">Maryland</option>
+														<option value="MA">Massachusetts</option>
+														<option value="MI">Michigan</option>
+														<option value="MN">Minnesota</option>
+														<option value="MS">Mississippi</option>
+														<option value="MO">Missouri</option>
+														<option value="MT">Montana</option>
+														<option value="NE">Nebraska</option>
+														<option value="NV">Nevada</option>
+														<option value="NH">New Hampshire</option>
+														<option value="NJ">New Jersey</option>
+														<option value="NM">New Mexico</option>
+														<option value="NY">New York</option>
+														<option value="NC">North Carolina</option>
+														<option value="ND">North Dakota</option>
+														<option value="OH">Ohio</option>
+														<option value="OK">Oklahoma</option>
+														<option value="OR">Oregon</option>
+														<option value="PA">Pennsylvania</option>
+														<option value="RI">Rhode Island</option>
+														<option value="SC">South Carolina</option>
+														<option value="SD">South Dakota</option>
+														<option value="TN">Tennessee</option>
+														<option value="TX">Texas</option>
+														<option value="UT">Utah</option>
+														<option value="VT">Vermont</option>
+														<option value="VA">Virginia</option>
+														<option value="WA">Washington</option>
+														<option value="WV">West Virginia</option>
+														<option value="WI">Wisconsin</option>
+														<option value="WY">Wyoming</option>
+													</select><div title="" style="width: 0px;" class="chzn-container chzn-container-single" id="selJDC_chzn"><a href="javascript:void(0)" class="chzn-single chzn-default" tabindex="-1"><span>Choose a Country...</span><div><b></b></div></a><div class="chzn-drop"><div class="chzn-search"><input autocomplete="off" type="text"></div><ul class="chzn-results"><li id="selJDC_chzn_o_1" class="active-result" style="">Alabama</li><li id="selJDC_chzn_o_2" class="active-result" style="">Alaska</li><li id="selJDC_chzn_o_3" class="active-result" style="">Arizona</li><li id="selJDC_chzn_o_4" class="active-result" style="">Arkansas</li><li id="selJDC_chzn_o_5" class="active-result" style="">California</li><li id="selJDC_chzn_o_6" class="active-result" style="">Colorado</li><li id="selJDC_chzn_o_7" class="active-result" style="">Connecticut</li><li id="selJDC_chzn_o_8" class="active-result" style="">Delaware</li><li id="selJDC_chzn_o_9" class="active-result" style="">Florida</li><li id="selJDC_chzn_o_10" class="active-result" style="">Georgia</li><li id="selJDC_chzn_o_11" class="active-result" style="">Hawaii</li><li id="selJDC_chzn_o_12" class="active-result" style="">Idaho</li><li id="selJDC_chzn_o_13" class="active-result" style="">Illinois</li><li id="selJDC_chzn_o_14" class="active-result" style="">Indiana</li><li id="selJDC_chzn_o_15" class="active-result" style="">Iowa</li><li id="selJDC_chzn_o_16" class="active-result" style="">Kansas</li><li id="selJDC_chzn_o_17" class="active-result" style="">Kentucky</li><li id="selJDC_chzn_o_18" class="active-result" style="">Louisiana</li><li id="selJDC_chzn_o_19" class="active-result" style="">Maine</li><li id="selJDC_chzn_o_20" class="active-result" style="">Maryland</li><li id="selJDC_chzn_o_21" class="active-result" style="">Massachusetts</li><li id="selJDC_chzn_o_22" class="active-result" style="">Michigan</li><li id="selJDC_chzn_o_23" class="active-result" style="">Minnesota</li><li id="selJDC_chzn_o_24" class="active-result" style="">Mississippi</li><li id="selJDC_chzn_o_25" class="active-result" style="">Missouri</li><li id="selJDC_chzn_o_26" class="active-result" style="">Montana</li><li id="selJDC_chzn_o_27" class="active-result" style="">Nebraska</li><li id="selJDC_chzn_o_28" class="active-result" style="">Nevada</li><li id="selJDC_chzn_o_29" class="active-result" style="">New Hampshire</li><li id="selJDC_chzn_o_30" class="active-result" style="">New Jersey</li><li id="selJDC_chzn_o_31" class="active-result" style="">New Mexico</li><li id="selJDC_chzn_o_32" class="active-result" style="">New York</li><li id="selJDC_chzn_o_33" class="active-result" style="">North Carolina</li><li id="selJDC_chzn_o_34" class="active-result" style="">North Dakota</li><li id="selJDC_chzn_o_35" class="active-result" style="">Ohio</li><li id="selJDC_chzn_o_36" class="active-result" style="">Oklahoma</li><li id="selJDC_chzn_o_37" class="active-result" style="">Oregon</li><li id="selJDC_chzn_o_38" class="active-result" style="">Pennsylvania</li><li id="selJDC_chzn_o_39" class="active-result" style="">Rhode Island</li><li id="selJDC_chzn_o_40" class="active-result" style="">South Carolina</li><li id="selJDC_chzn_o_41" class="active-result" style="">South Dakota</li><li id="selJDC_chzn_o_42" class="active-result" style="">Tennessee</li><li id="selJDC_chzn_o_43" class="active-result" style="">Texas</li><li id="selJDC_chzn_o_44" class="active-result" style="">Utah</li><li id="selJDC_chzn_o_45" class="active-result" style="">Vermont</li><li id="selJDC_chzn_o_46" class="active-result" style="">Virginia</li><li id="selJDC_chzn_o_47" class="active-result" style="">Washington</li><li id="selJDC_chzn_o_48" class="active-result" style="">West Virginia</li><li id="selJDC_chzn_o_49" class="active-result" style="">Wisconsin</li><li id="selJDC_chzn_o_50" class="active-result" style="">Wyoming</li></ul></div></div>
+												</div>
+											</div>
+
+											<div class="control-group">
+												<label class="control-label" for="form-field-username">Username</label>
+
+												<div class="controls">
+													<input id="form-field-username" placeholder="Username" value="alexdoe" type="text">
+												</div>
+											</div>
+
+											<div class="control-group">
+												<label class="control-label" for="form-field-first">Name</label>
+
+												<div class="controls">
+													<input class="input-small" id="form-field-first" placeholder="First Name" value="Alex" type="text">
+													<input class="input-small" id="form-field-last" placeholder="Last Name" value="Doe" type="text">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="modal-footer">
+									<button class="btn btn-small" data-dismiss="modal">
+										<i class="icon-remove"></i>
+										Cancel
+									</button>
+
+									<button class="btn btn-small btn-primary">
+										<i class="icon-ok"></i>
+										Save
+									</button>
+								</div>
+							</div><!--PAGE CONTENT ENDS-->
+						</div><!--/.span-->
+					</div><!--/.row-fluid-->
+				</div><!--/.page-content-->
+
+				<div class="ace-settings-container" id="ace-settings-container">
+					<div class="btn btn-app btn-mini btn-warning ace-settings-btn" id="ace-settings-btn">
+						<i class="icon-cog bigger-150"></i>
+					</div>
+
+					<div class="ace-settings-box" id="ace-settings-box">
+						<div>
+							<div class="pull-left">
+								<select style="display: none;" id="skin-colorpicker" class="hide">
+									<option selected="selected" data-class="default" value="#438EB9">#438EB9</option>
+									<option data-class="skin-1" value="#222A2D">#222A2D</option>
+									<option data-class="skin-2" value="#C6487E">#C6487E</option>
+									<option data-class="skin-3" value="#D0D0D0">#D0D0D0</option>
+								</select><div class="dropdown dropdown-colorpicker"><a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class="btn-colorpicker" style="background-color:#438EB9"></span></a><ul class="dropdown-menu dropdown-caret"><li><a class="colorpick-btn selected" href="#" style="background-color:#438EB9;" data-color="#438EB9"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#222A2D;" data-color="#222A2D"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#C6487E;" data-color="#C6487E"></a></li><li><a class="colorpick-btn" href="#" style="background-color:#D0D0D0;" data-color="#D0D0D0"></a></li></ul></div>
+							</div>
+							<span>&nbsp; Choose Skin</span>
+						</div>
+
+						<div>
+							<input class="ace-checkbox-2" id="ace-settings-header" type="checkbox">
+							<label class="lbl" for="ace-settings-header"> Fixed Header</label>
+						</div>
+
+						<div>
+							<input class="ace-checkbox-2" id="ace-settings-sidebar" type="checkbox">
+							<label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
+						</div>
+
+						<div>
+							<input class="ace-checkbox-2" id="ace-settings-breadcrumbs" type="checkbox">
+							<label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
+						</div>
+
+						<div>
+							<input class="ace-checkbox-2" id="ace-settings-rtl" type="checkbox">
+							<label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
+						</div>
+					</div>
+				</div><!--/#ace-settings-container-->
+			</div><!--/.main-content-->
+		</div><!--/.main-container-->
+
+		<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-small btn-inverse">
+			<i class="icon-double-angle-up icon-only bigger-110"></i>
+		</a>
+
+		<!--basic scripts-->
+
+		<!--[if !IE]>-->
+
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/jquery_005.js"></script>
+
+		<!--<![endif]-->
+
+		<!--[if IE]>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<![endif]-->
+
+		<!--[if !IE]>-->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+		</script>
+
+		<!--<![endif]-->
+
+		<!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/bootstrap.js"></script>
+
+		<!--page specific plugin scripts-->
+
+		<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/jquery-ui-1.js"></script>
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/jquery_006.js"></script>
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/chosen.js"></script>
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/fuelux.js"></script>
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/bootstrap-datepicker.js"></script>
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/bootstrap-timepicker.js"></script>
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/moment.js"></script>
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/daterangepicker.js"></script>
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/bootstrap-colorpicker.js"></script>
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/jquery_004.js"></script>
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/jquery_003.js"></script>
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/jquery.js"></script>
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/jquery_002.js"></script>
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/bootstrap-tag.js"></script>
+
+		<!--ace scripts-->
+
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/ace-elements.js"></script>
+		<script src="Form%20Elements%20-%20Ace%20Admin_files/ace.js"></script>
+
+		<!--inline scripts related to this page-->
+
+		<script type="text/javascript">
+			$(function() {
+				$('#id-disable-check').on('click', function() {
+					var inp = $('#form-input-readonly').get(0);
+					if(inp.hasAttribute('disabled')) {
+						inp.setAttribute('readonly' , 'true');
+						inp.removeAttribute('disabled');
+						inp.value="This text field is readonly!";
+					}
+					else {
+						inp.setAttribute('disabled' , 'disabled');
+						inp.removeAttribute('readonly');
+						inp.value="This text field is disabled!";
+					}
+				});
+			
+			
+				$(".chzn-select").chosen(); 
+				
+				$('[data-rel=tooltip]').tooltip({container:'body'});
+				$('[data-rel=popover]').popover({container:'body'});
+				
+				$('textarea[class*=autosize]').autosize({append: "\n"});
+				$('textarea[class*=limited]').each(function() {
+					var limit = parseInt($(this).attr('data-maxlength')) || 100;
+					$(this).inputlimiter({
+						"limit": limit,
+						remText: '%n character%s remaining...',
+						limitText: 'max allowed : %n.'
+					});
+				});
+				
+				$.mask.definitions['~']='[+-]';
+				$('.input-mask-date').mask('99/99/9999');
+				$('.input-mask-phone').mask('(999) 999-9999');
+				$('.input-mask-eyescript').mask('~9.99 ~9.99 999');
+				$(".input-mask-product").mask("a*-999-a999",{placeholder:" ",completed:function(){alert("You typed the following: "+this.val());}});
+				
+				
+				
+				$( "#input-size-slider" ).css('width','200px').slider({
+					value:1,
+					range: "min",
+					min: 1,
+					max: 6,
+					step: 1,
+					slide: function( event, ui ) {
+						var sizing = ['', 'input-mini', 'input-small', 'input-medium', 'input-large', 'input-xlarge', 'input-xxlarge'];
+						var val = parseInt(ui.value);
+						$('#form-field-4').attr('class', sizing[val]).val('.'+sizing[val]);
+					}
+				});
+			
+				$( "#input-span-slider" ).slider({
+					value:1,
+					range: "min",
+					min: 1,
+					max: 11,
+					step: 1,
+					slide: function( event, ui ) {
+						var val = parseInt(ui.value);
+						$('#form-field-5').attr('class', 'span'+val).val('.span'+val).next().attr('class', 'span'+(12-val)).val('.span'+(12-val));
+					}
+				});
+				
+				
+				$( "#slider-range" ).css('height','200px').slider({
+					orientation: "vertical",
+					range: true,
+					min: 0,
+					max: 100,
+					values: [ 17, 67 ],
+					slide: function( event, ui ) {
+						var val = ui.values[$(ui.handle).index()-1]+"";
+			
+						if(! ui.handle.firstChild ) {
+							$(ui.handle).append("<div class='tooltip right in' style='display:none;left:15px;top:-8px;'><div class='tooltip-arrow'></div><div class='tooltip-inner'></div></div>");
+						}
+						$(ui.handle.firstChild).show().children().eq(1).text(val);
+					}
+				}).find('a').on('blur', function(){
+					$(this.firstChild).hide();
+				});
+				
+				$( "#slider-range-max" ).slider({
+					range: "max",
+					min: 1,
+					max: 10,
+					value: 2
+				});
+				
+				$( "#eq > span" ).css({width:'90%', 'float':'left', margin:'15px'}).each(function() {
+					// read initial values from markup and remove that
+					var value = parseInt( $( this ).text(), 10 );
+					$( this ).empty().slider({
+						value: value,
+						range: "min",
+						animate: true
+						
+					});
+				});
+			
+				
+				$('#id-input-file-1 , #id-input-file-2').ace_file_input({
+					no_file:'No File ...',
+					btn_choose:'Choose',
+					btn_change:'Change',
+					droppable:false,
+					onchange:null,
+					thumbnail:false //| true | large
+					//whitelist:'gif|png|jpg|jpeg'
+					//blacklist:'exe|php'
+					//onchange:''
+					//
+				});
+				
+				$('#id-input-file-3').ace_file_input({
+					style:'well',
+					btn_choose:'Drop files here or click to choose',
+					btn_change:null,
+					no_icon:'icon-cloud-upload',
+					droppable:true,
+					thumbnail:'small'
+					//,icon_remove:null//set null, to hide remove/reset button
+					/**,before_change:function(files, dropped) {
+						//Check an example below
+						//or examples/file-upload.html
+						return true;
+					}*/
+					/**,before_remove : function() {
+						return true;
+					}*/
+					,
+					preview_error : function(filename, error_code) {
+						//name of the file that failed
+						//error_code values
+						//1 = 'FILE_LOAD_FAILED',
+						//2 = 'IMAGE_LOAD_FAILED',
+						//3 = 'THUMBNAIL_FAILED'
+						//alert(error_code);
+					}
+			
+				}).on('change', function(){
+					//console.log($(this).data('ace_input_files'));
+					//console.log($(this).data('ace_input_method'));
+				});
+				
+			
+				//dynamically change allowed formats by changing before_change callback function
+				$('#id-file-format').removeAttr('checked').on('change', function() {
+					var before_change
+					var btn_choose
+					var no_icon
+					if(this.checked) {
+						btn_choose = "Drop images here or click to choose";
+						no_icon = "icon-picture";
+						before_change = function(files, dropped) {
+							var allowed_files = [];
+							for(var i = 0 ; i < files.length; i++) {
+								var file = files[i];
+								if(typeof file === "string") {
+									//IE8 and browsers that don't support File Object
+									if(! (/\.(jpe?g|png|gif|bmp)$/i).test(file) ) return false;
+								}
+								else {
+									var type = $.trim(file.type);
+									if( ( type.length > 0 && ! (/^image\/(jpe?g|png|gif|bmp)$/i).test(type) )
+											|| ( type.length == 0 && ! (/\.(jpe?g|png|gif|bmp)$/i).test(file.name) )//for android's default browser which gives an empty string for file.type
+										) continue;//not an image so don't keep this file
+								}
+								
+								allowed_files.push(file);
+							}
+							if(allowed_files.length == 0) return false;
+			
+							return allowed_files;
+						}
+					}
+					else {
+						btn_choose = "Drop files here or click to choose";
+						no_icon = "icon-cloud-upload";
+						before_change = function(files, dropped) {
+							return files;
+						}
+					}
+					var file_input = $('#id-input-file-3');
+					file_input.ace_file_input('update_settings', {'before_change':before_change, 'btn_choose': btn_choose, 'no_icon':no_icon})
+					file_input.ace_file_input('reset_input');
+				});
+			
+			
+			
+			
+				$('#spinner1').ace_spinner({value:0,min:0,max:200,step:10, btn_up_class:'btn-info' , btn_down_class:'btn-info'})
+				.on('change', function(){
+					//alert(this.value)
+				});
+				$('#spinner2').ace_spinner({value:0,min:0,max:10000,step:100, icon_up:'icon-caret-up', icon_down:'icon-caret-down'});
+				$('#spinner3').ace_spinner({value:0,min:-100,max:100,step:10, icon_up:'icon-plus', icon_down:'icon-minus', btn_up_class:'btn-success' , btn_down_class:'btn-danger'});
+			
+			
+				
+				$('.date-picker').datepicker().next().on(ace.click_event, function(){
+					$(this).prev().focus();
+				});
+				$('#id-date-range-picker-1').daterangepicker().prev().on(ace.click_event, function(){
+					$(this).next().focus();
+				});
+				
+				$('#timepicker1').timepicker({
+					minuteStep: 1,
+					showSeconds: true,
+					showMeridian: false
+				})
+				
+				$('#colorpicker1').colorpicker();
+				$('#simple-colorpicker-1').ace_colorpicker();
+			
+				
+				$(".knob").knob();
+				
+				
+				//we could just set the data-provide="tag" of the element inside HTML, but IE8 fails!
+				var tag_input = $('#form-field-tags');
+				if(! ( /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase())) ) 
+					tag_input.tag({placeholder:tag_input.attr('placeholder')});
+				else {
+					//display a textarea for old IE, because it doesn't support this plugin or another one I tried!
+					tag_input.after('<textarea id="'+tag_input.attr('id')+'" name="'+tag_input.attr('name')+'" rows="3">'+tag_input.val()+'</textarea>').remove();
+					//$('#form-field-tags').autosize({append: "\n"});
+				}
+			
+			
+				/////////
+				$('#modal-form input[type=file]').ace_file_input({
+					style:'well',
+					btn_choose:'Drop files here or click to choose',
+					btn_change:null,
+					no_icon:'icon-cloud-upload',
+					droppable:true,
+					thumbnail:'large'
+				})
+				
+				//chosen plugin inside a modal will have a zero width because the select element is originally hidden
+				//and its width cannot be determined.
+				//so we set the width after modal is show
+				$('#modal-form').on('show', function () {
+					$(this).find('.chzn-container').each(function(){
+						$(this).find('a:first-child').css('width' , '200px');
+						$(this).find('.chzn-drop').css('width' , '210px');
+						$(this).find('.chzn-search input').css('width' , '200px');
+					});
+				})
+				/**
+				//or you can activate the chosen plugin after modal is shown
+				//this way select element has a width now and chosen works as expected
+				$('#modal-form').on('shown', function () {
+					$(this).find('.modal-chosen').chosen();
+				})
+				*/
+			
+			});
+		</script>
+	
+
+<textarea class="autosizejs" tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px none; -moz-box-sizing: content-box; word-wrap: break-word; height: 0px ! important; min-height: 0px ! important; overflow: hidden; transition: none 0s ease 0s ; font-family: &quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif; font-size: 14px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-indent: 0px; line-height: 20px; width: 313.867px;">
+</textarea><div style="position: absolute; display: none;" class="limiterBox" id="limiterBox"></div><div class="datepicker datepicker-dropdown dropdown-menu"><div style="display: block;" class="datepicker-days"><table class=" table-condensed"><thead><tr><th style="visibility: visible;" class="prev"><i class="icon-arrow-left"></i></th><th colspan="5" class="switch">July 2013</th><th style="visibility: visible;" class="next"><i class="icon-arrow-right"></i></th></tr><tr><th class="dow">Su</th><th class="dow">Mo</th><th class="dow">Tu</th><th class="dow">We</th><th class="dow">Th</th><th class="dow">Fr</th><th class="dow">Sa</th></tr></thead><tbody><tr><td class="day old">30</td><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td><td class="day">5</td><td class="day">6</td></tr><tr><td class="day">7</td><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td><td class="day">12</td><td class="day">13</td></tr><tr><td class="day">14</td><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td><td class="day">19</td><td class="day">20</td></tr><tr><td class="day">21</td><td class="day">22</td><td class="day active">23</td><td class="day">24</td><td class="day">25</td><td class="day">26</td><td class="day">27</td></tr><tr><td class="day">28</td><td class="day">29</td><td class="day">30</td><td class="day">31</td><td class="day new">1</td><td class="day new">2</td><td class="day new">3</td></tr><tr><td class="day new">4</td><td class="day new">5</td><td class="day new">6</td><td class="day new">7</td><td class="day new">8</td><td class="day new">9</td><td class="day new">10</td></tr></tbody><tfoot><tr><th style="display: none;" colspan="7" class="today">Today</th></tr></tfoot></table></div><div style="display: none;" class="datepicker-months"><table class="table-condensed"><thead><tr><th style="visibility: visible;" class="prev"><i class="icon-arrow-left"></i></th><th colspan="5" class="switch">2013</th><th style="visibility: visible;" class="next"><i class="icon-arrow-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span class="month">Mar</span><span class="month">Apr</span><span class="month">May</span><span class="month">Jun</span><span class="month active">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td></tr></tbody><tfoot><tr><th style="display: none;" colspan="7" class="today">Today</th></tr></tfoot></table></div><div style="display: none;" class="datepicker-years"><table class="table-condensed"><thead><tr><th style="visibility: visible;" class="prev"><i class="icon-arrow-left"></i></th><th colspan="5" class="switch">2010-2019</th><th style="visibility: visible;" class="next"><i class="icon-arrow-right"></i></th></tr></thead><tbody><tr><td colspan="7"><span class="year old">2009</span><span class="year">2010</span><span class="year">2011</span><span class="year">2012</span><span class="year active">2013</span><span class="year">2014</span><span class="year">2015</span><span class="year">2016</span><span class="year">2017</span><span class="year">2018</span><span class="year">2019</span><span class="year old">2020</span></td></tr></tbody><tfoot><tr><th style="display: none;" colspan="7" class="today">Today</th></tr></tfoot></table></div></div><div style="top: 2097.25px; left: 250px; right: auto; min-width: 160px;" class="daterangepicker dropdown-menu opensright"><div style="display: block;" class="calendar right"><table class="table-condensed"><thead><tr><th></th><th colspan="5" style="width: auto">Jul 2013</th><th class="next available"><i class="icon-arrow-right"></i></th></tr><tr><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr></thead><tbody><tr><td class="off disabled" data-title="r0c0">30</td><td class="off disabled" data-title="r0c1">1</td><td class="off disabled" data-title="r0c2">2</td><td class="off disabled" data-title="r0c3">3</td><td class="off disabled" data-title="r0c4">4</td><td class="off disabled" data-title="r0c5">5</td><td class="off disabled" data-title="r0c6">6</td></tr><tr><td class="off disabled" data-title="r1c0">7</td><td class="off disabled" data-title="r1c1">8</td><td class="off disabled" data-title="r1c2">9</td><td class="off disabled" data-title="r1c3">10</td><td class="off disabled" data-title="r1c4">11</td><td class="off disabled" data-title="r1c5">12</td><td class="off disabled" data-title="r1c6">13</td></tr><tr><td class="off disabled" data-title="r2c0">14</td><td class="off disabled" data-title="r2c1">15</td><td class="off disabled" data-title="r2c2">16</td><td class="off disabled" data-title="r2c3">17</td><td class="off disabled" data-title="r2c4">18</td><td class="off disabled" data-title="r2c5">19</td><td class="off disabled" data-title="r2c6">20</td></tr><tr><td class="off disabled" data-title="r3c0">21</td><td class="off disabled" data-title="r3c1">22</td><td class="available active end-date" data-title="r3c2">23</td><td class="available" data-title="r3c3">24</td><td class="available" data-title="r3c4">25</td><td class="available" data-title="r3c5">26</td><td class="available" data-title="r3c6">27</td></tr><tr><td class="available" data-title="r4c0">28</td><td class="available" data-title="r4c1">29</td><td class="available" data-title="r4c2">30</td><td class="available" data-title="r4c3">31</td><td class="available off" data-title="r4c4">1</td><td class="available off" data-title="r4c5">2</td><td class="available off" data-title="r4c6">3</td></tr><tr><td class="available off" data-title="r5c0">4</td><td class="available off" data-title="r5c1">5</td><td class="available off" data-title="r5c2">6</td><td class="available off" data-title="r5c3">7</td><td class="available off" data-title="r5c4">8</td><td class="available off" data-title="r5c5">9</td><td class="available off" data-title="r5c6">10</td></tr></tbody></table></div><div style="display: block;" class="calendar left"><table class="table-condensed"><thead><tr><th class="prev available"><i class="icon-arrow-left"></i></th><th colspan="5" style="width: auto">Jul 2013</th><th class="next available"><i class="icon-arrow-right"></i></th></tr><tr><th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa</th></tr></thead><tbody><tr><td class="available off" data-title="r0c0">30</td><td class="available" data-title="r0c1">1</td><td class="available" data-title="r0c2">2</td><td class="available" data-title="r0c3">3</td><td class="available" data-title="r0c4">4</td><td class="available" data-title="r0c5">5</td><td class="available" data-title="r0c6">6</td></tr><tr><td class="available" data-title="r1c0">7</td><td class="available" data-title="r1c1">8</td><td class="available" data-title="r1c2">9</td><td class="available" data-title="r1c3">10</td><td class="available" data-title="r1c4">11</td><td class="available" data-title="r1c5">12</td><td class="available" data-title="r1c6">13</td></tr><tr><td class="available" data-title="r2c0">14</td><td class="available" data-title="r2c1">15</td><td class="available" data-title="r2c2">16</td><td class="available" data-title="r2c3">17</td><td class="available" data-title="r2c4">18</td><td class="available" data-title="r2c5">19</td><td class="available" data-title="r2c6">20</td></tr><tr><td class="available" data-title="r3c0">21</td><td class="available" data-title="r3c1">22</td><td class="available active start-date" data-title="r3c2">23</td><td class="available" data-title="r3c3">24</td><td class="available" data-title="r3c4">25</td><td class="available" data-title="r3c5">26</td><td class="available" data-title="r3c6">27</td></tr><tr><td class="available" data-title="r4c0">28</td><td class="available" data-title="r4c1">29</td><td class="available" data-title="r4c2">30</td><td class="available" data-title="r4c3">31</td><td class="available off" data-title="r4c4">1</td><td class="available off" data-title="r4c5">2</td><td class="available off" data-title="r4c6">3</td></tr><tr><td class="available off" data-title="r5c0">4</td><td class="available off" data-title="r5c1">5</td><td class="available off" data-title="r5c2">6</td><td class="available off" data-title="r5c3">7</td><td class="available off" data-title="r5c4">8</td><td class="available off" data-title="r5c5">9</td><td class="available off" data-title="r5c6">10</td></tr></tbody></table></div><div class="ranges"><div class="range_inputs"><div class="daterangepicker_start_input" style="float: left"><label for="daterangepicker_start">From</label><input class="input-mini" name="daterangepicker_start" value="07/23/2013" disabled="disabled" type="text"></div><div class="daterangepicker_end_input" style="float: left; padding-left: 11px"><label for="daterangepicker_end">To</label><input class="input-mini" name="daterangepicker_end" value="07/23/2013" disabled="disabled" type="text"></div><button class="btn btn-small btn-success applyBtn">Apply</button>&nbsp;<button class="btn btn-small clearBtn">Clear</button></div></div></div><div class="colorpicker dropdown-menu"><div style="background-color: rgb(255, 0, 0);" class="colorpicker-saturation"><i style="left: 100px; top: 0px;"><b></b></i></div><div class="colorpicker-hue"><i style="top: 0px;"></i></div><div class="colorpicker-alpha"><i style="top: 0px;"></i></div><div class="colorpicker-color"><div style="background-color: rgb(255, 0, 0);"></div></div></div></body></html>
